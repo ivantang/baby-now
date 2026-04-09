@@ -8,4 +8,15 @@ export default defineConfig({
     outDir: 'dist',
     target: 'es2020',
   },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: ['./src/test/setup.js'],
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'lcov'],
+      include: ['src/**/*.{js,jsx}'],
+      exclude: ['src/test/**'],
+    },
+  },
 })
