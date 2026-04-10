@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <!-- Week 12 — Reaching and grabbing. First laughs. Arms raised. Light gold. -->
+
+  <!-- Background -->
+  <rect width="200" height="240" fill="#fdf8f0" rx="16"/>
+
+  <!-- Stars — celebratory for 3 months -->
+  <polygon transform="translate(25,28) scale(0.9)" points="0,-9 2.12,-2.91 8.56,-2.78 3.42,1.11 5.29,7.28 0,3.6 -5.29,7.28 -3.42,1.11 -8.56,-2.78 -2.12,-2.91" fill="#f5c842" opacity="0.65"/>
+  <polygon transform="translate(172,32) scale(0.8)" points="0,-9 2.12,-2.91 8.56,-2.78 3.42,1.11 5.29,7.28 0,3.6 -5.29,7.28 -3.42,1.11 -8.56,-2.78 -2.12,-2.91" fill="#f5c842" opacity="0.6"/>
+  <polygon transform="translate(158,18) scale(0.48)" points="0,-9 2.12,-2.91 8.56,-2.78 3.42,1.11 5.29,7.28 0,3.6 -5.29,7.28 -3.42,1.11 -8.56,-2.78 -2.12,-2.91" fill="#f5c842" opacity="0.5"/>
+  <polygon transform="translate(40,18) scale(0.48)" points="0,-9 2.12,-2.91 8.56,-2.78 3.42,1.11 5.29,7.28 0,3.6 -5.29,7.28 -3.42,1.11 -8.56,-2.78 -2.12,-2.91" fill="#f5c842" opacity="0.5"/>
+
+  <!-- Body -->
+  <ellipse cx="100" cy="196" rx="40" ry="28" fill="#f5e68a" stroke="#3a2a4a" stroke-width="2"/>
+
+  <!-- Left arm — raised (reaching!) -->
+  <ellipse cx="56" cy="178" rx="14" ry="9" fill="#f5e68a" stroke="#3a2a4a" stroke-width="2" transform="rotate(-55 56 178)"/>
+
+  <!-- Left fist reaching up -->
+  <circle cx="48" cy="162" r="11" fill="#f5e68a" stroke="#3a2a4a" stroke-width="2"/>
+
+  <!-- Right arm — raised -->
+  <ellipse cx="144" cy="178" rx="14" ry="9" fill="#f5e68a" stroke="#3a2a4a" stroke-width="2" transform="rotate(55 144 178)"/>
+
+  <!-- Right fist reaching up -->
+  <circle cx="152" cy="162" r="11" fill="#f5e68a" stroke="#3a2a4a" stroke-width="2"/>
+
+  <!-- Head -->
+  <circle cx="100" cy="95" r="64" fill="#ffffff" stroke="#3a2a4a" stroke-width="2.5"/>
+
+  <!-- Left cheek blush — more prominent for laughing -->
+  <circle cx="67" cy="112" r="25" fill="#f2a07b" opacity="0.38"/>
+
+  <!-- Right cheek blush -->
+  <circle cx="133" cy="112" r="25" fill="#f2a07b" opacity="0.38"/>
+
+  <!-- Left eye — crescent, slightly more upturned (happy) -->
+  <path d="M 79,89 Q 87,80 95,89" fill="none" stroke="#3a2a4a" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="87" cy="89" rx="4" ry="2.5" fill="#3a2a4a" opacity="0.72"/>
+
+  <!-- Right eye -->
+  <path d="M 105,89 Q 113,80 121,89" fill="none" stroke="#3a2a4a" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="113" cy="89" rx="4" ry="2.5" fill="#3a2a4a" opacity="0.72"/>
+
+  <!-- Nose -->
+  <circle cx="96.5" cy="101" r="1.5" fill="#3a2a4a" opacity="0.6"/>
+  <circle cx="103.5" cy="101" r="1.5" fill="#3a2a4a" opacity="0.6"/>
+
+  <!-- Mouth — open laughing smile -->
+  <path d="M 88,113 Q 100,123 112,113" fill="#3a2a4a" stroke="#3a2a4a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 89,113 Q 100,122 111,113" fill="#ffffff"/>
+</svg>
