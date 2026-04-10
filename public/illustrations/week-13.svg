@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <!-- Week 13 — Alert and aware. Eyes more open, taking everything in. Lavender. -->
+
+  <!-- Background -->
+  <rect width="200" height="240" fill="#fdf8f0" rx="16"/>
+
+  <!-- Stars -->
+  <polygon transform="translate(30,38) scale(0.7)" points="0,-9 2.12,-2.91 8.56,-2.78 3.42,1.11 5.29,7.28 0,3.6 -5.29,7.28 -3.42,1.11 -8.56,-2.78 -2.12,-2.91" fill="#f5c842" opacity="0.55"/>
+  <polygon transform="translate(170,30) scale(0.6)" points="0,-9 2.12,-2.91 8.56,-2.78 3.42,1.11 5.29,7.28 0,3.6 -5.29,7.28 -3.42,1.11 -8.56,-2.78 -2.12,-2.91" fill="#f5c842" opacity="0.5"/>
+
+  <!-- Crescent moon -->
+  <circle cx="25" cy="210" r="11" fill="#f5c842" opacity="0.5"/>
+  <circle cx="31" cy="207" r="9.5" fill="#fdf8f0"/>
+
+  <!-- Body -->
+  <ellipse cx="100" cy="192" rx="40" ry="30" fill="#d4c5f0" stroke="#3a2a4a" stroke-width="2"/>
+
+  <!-- Left arm -->
+  <ellipse cx="61" cy="198" rx="13" ry="9" fill="#d4c5f0" stroke="#3a2a4a" stroke-width="2" transform="rotate(-22 61 198)"/>
+
+  <!-- Right arm -->
+  <ellipse cx="139" cy="198" rx="13" ry="9" fill="#d4c5f0" stroke="#3a2a4a" stroke-width="2" transform="rotate(22 139 198)"/>
+
+  <!-- Head -->
+  <circle cx="100" cy="95" r="63" fill="#ffffff" stroke="#3a2a4a" stroke-width="2.5"/>
+
+  <!-- Left cheek blush -->
+  <circle cx="68" cy="111" r="22" fill="#f2a07b" opacity="0.30"/>
+
+  <!-- Right cheek blush -->
+  <circle cx="132" cy="111" r="22" fill="#f2a07b" opacity="0.30"/>
+
+  <!-- Left eye — more open (alert) -->
+  <path d="M 79,90 Q 87,80 95,90" fill="none" stroke="#3a2a4a" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="87" cy="90" rx="5" ry="3.5" fill="#3a2a4a" opacity="0.78"/>
+  <!-- White highlight -->
+  <circle cx="89" cy="88.5" r="1.4" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Right eye — more open -->
+  <path d="M 105,90 Q 113,80 121,90" fill="none" stroke="#3a2a4a" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="113" cy="90" rx="5" ry="3.5" fill="#3a2a4a" opacity="0.78"/>
+  <!-- White highlight -->
+  <circle cx="115" cy="88.5" r="1.4" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Nose -->
+  <circle cx="96.5" cy="101" r="1.5" fill="#3a2a4a" opacity="0.6"/>
+  <circle cx="103.5" cy="101" r="1.5" fill="#3a2a4a" opacity="0.6"/>
+
+  <!-- Mouth — small O, curious -->
+  <path d="M 93,112 Q 100,116 107,112" fill="none" stroke="#3a2a4a" stroke-width="2" stroke-linecap="round"/>
+</svg>
