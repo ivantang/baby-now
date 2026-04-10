@@ -236,7 +236,51 @@ Shareable milestone cards, multiple baby profiles, polished splash/loading/icon,
 - **No forced signup** — free users can browse all content without an account
 - **Paywall is soft and respectful** — only AI chat is locked, everything else is free
 - **Never alarming** — warm, reassuring language throughout; not a medical app
-- **Aesthetic** — warm & cozy: creams, earth tones, terracotta, sage green; like a beautiful baby journal
+- **Aesthetic** — "ugly cute": chubby, squishy characters with oversized cheeks and dreamy expressions, inspired by PopMart's Twinkle Twinkle Be a Little Star series
+
+---
+
+## Visual Direction
+
+### Illustration Style — "Ugly Cute"
+Inspired by **PopMart's Twinkle Twinkle Be a Little Star** series. The style is deliberately not polished or realistic — it's endearing *because* of its imperfect, exaggerated proportions.
+
+**Character anatomy:**
+- Enormous, doughy cheeks that take up most of the face — the defining feature
+- Oversized round head with a large forehead (head-to-body ratio of roughly 2:1)
+- Tiny half-moon or closed crescent eyes — sleepy, dreamy, never wide-open
+- Stub nose — barely there, just a suggestion
+- Small pursed or slightly downturned mouth — peaceful, not grinning
+- Stubby, chubby arms and legs — almost vestigial
+- The whole figure looks like it's made of soft mochi or memory foam
+
+**Expression:**
+Neutral to quietly content — not performing happiness. A slightly blank, serene stare. The "cute" comes from the proportions, not the smile.
+
+**Colour palette (updated):**
+| Token | Hex | Use |
+|-------|-----|-----|
+| Warm cream | `#fdf8f0` | Background |
+| Soft gold | `#f5c842` | Primary accent, star motifs |
+| Blush peach | `#f2a07b` | Cheek blush, warm highlights |
+| Powder blue | `#b8d8f0` | Secondary accent |
+| Lavender mist | `#d4c5f0` | Tertiary, badges |
+| Deep plum | `#3a2a4a` | Body text (replaces dark brown) |
+| Muted sage | `#8faf8f` | Supporting colour |
+
+**Motifs:** Stars ⭐, moons 🌙, soft clouds — celestial and dreamy without being literal space theme.
+
+**Illustration format:** SVG, one per week. Each week's character subtly reflects the developmental stage (e.g. week 6 character has a tiny smile because first social smiles; week 16 has arms reaching outward).
+
+### Typography (updated)
+- **Display:** [Fredoka](https://fonts.google.com/specimen/Fredoka) — rounded, chunky, friendly; matches the chubby character aesthetic
+- **Body:** [Nunito](https://fonts.google.com/specimen/Nunito) — soft rounded sans, warm and readable
+
+### UI Feel
+- Rounded corners everywhere — no sharp edges
+- Soft drop shadows (no harsh borders)
+- Gentle bounce animations on badge unlocks
+- Cards feel like physical objects — slightly tactile and dimensional
 
 ---
 
@@ -258,6 +302,6 @@ Shareable milestone cards, multiple baby profiles, polished splash/loading/icon,
 | App name | Little One / Tiny Steps / Baby Bloom / custom | **TBD** |
 | Subscription price | $2.99–$4.99/mo or $19.99–$29.99/yr CAD | **TBD** |
 | 52 weeks content source | Written by Claude / owner reviews / expert reviewed | **TBD** |
-| Illustration approach | SVG coded by Claude / hired illustrator / AI-generated | **TBD** |
+| Illustration approach | "Ugly cute" SVG style — chubby cheeks, inspired by PopMart Twinkle Twinkle | **Decided** |
 | Photo storage | Supabase Storage vs Cloudinary | **TBD** |
 | Social login (Phase 2) | Google only / Apple only / both | **TBD** |
