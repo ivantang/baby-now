@@ -1,18 +1,21 @@
 /* Design tokens — Baby Week by Week */
 :root {
-  /* Colour palette: warm, cozy — creams, earth tones, terracotta, sage */
-  --color-bg:           #faf6f0;
+  /* Colour palette: "ugly cute" — warm cream, gold, blush, dreamy pastels */
+  --color-bg:           #fdf8f0;   /* warm cream */
   --color-surface:      #ffffff;
-  --color-surface-alt:  #f4ede3;
-  --color-primary:      #c8956c;   /* terracotta */
-  --color-primary-dark: #a8704a;
-  --color-accent:       #7a9e7e;   /* sage green */
-  --color-text:         #3d2b1f;
-  --color-text-muted:   #7a6558;
-  --color-border:       #e8ddd4;
+  --color-surface-alt:  #f0eafc;   /* lavender tint */
+  --color-primary:      #f5c842;   /* soft gold */
+  --color-primary-dark: #d4a820;   /* deeper gold */
+  --color-blush:        #f2a07b;   /* blush peach — cheeks, warm highlights */
+  --color-blue:         #b8d8f0;   /* powder blue — secondary accent */
+  --color-lavender:     #d4c5f0;   /* lavender mist — badges, tertiary */
+  --color-sage:         #8faf8f;   /* muted sage — supporting */
+  --color-text:         #3a2a4a;   /* deep plum */
+  --color-text-muted:   #7a6890;   /* muted plum */
+  --color-border:       #e8e0f0;   /* soft lavender border */
 
   /* Typography */
-  --font-display: 'Fraunces', Georgia, serif;
+  --font-display: 'Fredoka', system-ui, sans-serif;
   --font-body:    'Nunito', system-ui, sans-serif;
 
   /* Spacing */
@@ -29,8 +32,8 @@
   --radius-lg: 24px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 4px rgba(61, 43, 31, 0.08);
-  --shadow-md: 0 4px 16px rgba(61, 43, 31, 0.12);
+  --shadow-sm: 0 1px 4px rgba(58, 42, 74, 0.08);
+  --shadow-md: 0 4px 16px rgba(58, 42, 74, 0.12);
 }
 
 *, *::before, *::after {
@@ -116,6 +119,7 @@ body {
 .setup-title {
   font-family: var(--font-display);
   font-size: 2rem;
+  font-weight: 700;
   color: var(--color-text);
   margin-bottom: var(--space-sm);
 }
@@ -182,8 +186,8 @@ body {
 
 .hero-week-badge {
   display: inline-block;
-  background: var(--color-surface-alt);
-  color: var(--color-primary-dark);
+  background: var(--color-lavender);
+  color: var(--color-text);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -196,6 +200,7 @@ body {
 .hero-title {
   font-family: var(--font-display);
   font-size: 1.75rem;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--color-text);
 }
@@ -222,7 +227,7 @@ body {
 }
 
 .hero-stat {
-  background: var(--color-surface-alt);
+  background: var(--color-surface-alt);   /* lavender tint */
   border-radius: var(--radius-sm);
   padding: var(--space-sm) var(--space-md);
   display: flex;
