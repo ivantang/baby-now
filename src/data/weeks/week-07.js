@@ -5,6 +5,7 @@ export const week07 = {
   title: 'Week 7 — 7 weeks old',
   highlight:
     'If last week was the peak, this week often marks the beginning of the slow ease. Smiles are appearing, alert periods are more enjoyable, and you\'re starting to feel like you know each other.',
+  illustration: '/illustrations/baby-07.png',
   physical: {
     size: '~4.2–5.2 kg / 9.5–11.5 lbs, ~55–59 cm / 21.5–23 in',
     motorSkills:

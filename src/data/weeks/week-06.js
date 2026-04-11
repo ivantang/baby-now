@@ -5,6 +5,7 @@ export const week06 = {
   title: 'Week 6 — 6 weeks old',
   highlight:
     'Week 6 is famous for two things: the peak of newborn fussiness (it often gets hardest before it gets easier) — and the first genuine social smile. Keep your eyes open. It\'s coming.',
+  illustration: '/illustrations/baby-06.png',
   physical: {
     size: '~4–5 kg / 9–11 lbs, ~54–58 cm / 21.5–23 in',
     motorSkills:

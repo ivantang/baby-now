@@ -173,6 +173,15 @@ body {
   margin-top: calc(-1 * var(--space-sm));
 }
 
+/* ─── Week illustration ──────────────────────────────────── */
+.hero-illustration {
+  display: block;
+  width: 160px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+}
+
 /* ─── Week hero card ─────────────────────────────────────── */
 .hero-card {
   background: var(--color-surface);

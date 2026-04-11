@@ -3,6 +3,7 @@ export const week16 = {
   week: 16,
   ageRange: '4 months old',
   title: 'Week 16 — 4 months old',
+  illustration: '/illustrations/baby-16.png',
   highlight:
     'Welcome to 4 months — the age when babies truly "wake up" to the world. Your baby is laughing, reaching, rolling, and making it very clear what they like and don\'t like. They are wonderfully, unmistakably themselves.',
   physical: {

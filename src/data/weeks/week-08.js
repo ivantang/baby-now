@@ -5,6 +5,7 @@ export const week08 = {
   title: 'Week 8 — 2 months old',
   highlight:
     'The first real social smiles are arriving this week — those big, gummy grins meant just for you. This is one of the most heartwarming moments of the whole first year.',
+  illustration: '/illustrations/baby-08.png',
   physical: {
     size: '~4.5–5.5 kg / 10–12 lbs, ~56–59 cm / 22–23 in',
     motorSkills:

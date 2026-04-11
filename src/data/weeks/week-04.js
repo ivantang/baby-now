@@ -5,6 +5,7 @@ export const week04 = {
   title: 'Week 4 — 1 month old',
   highlight:
     'One whole month. You\'ve kept a tiny human alive and thriving through the most intense few weeks of your life. Your baby is more alert and curious than ever before, and you\'re beginning to learn each other.',
+  illustration: '/illustrations/baby-04.png',
   physical: {
     size: '~3.5–4.5 kg / 8–10 lbs, ~52–56 cm / 20.5–22 in',
     motorSkills:

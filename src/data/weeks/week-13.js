@@ -5,6 +5,7 @@ export const week13 = {
   title: 'Week 13 — 3 months old',
   highlight:
     'Your baby is fully in their social golden age. Laughs, coos, and enormous grins are the currency of every interaction. They are simply delightful to be around right now.',
+  illustration: '/illustrations/baby-13.png',
   physical: {
     size: '~5.5–6.8 kg / 12–15 lbs, ~60–63 cm / 23.5–25 in',
     motorSkills:

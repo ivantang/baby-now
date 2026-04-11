@@ -5,6 +5,7 @@ export const week10 = {
   title: 'Week 10 — 10 weeks old',
   highlight:
     'Your baby is becoming a little social butterfly. Smiles are freely given, coos are becoming mini-conversations, and their personality is unmistakably starting to show.',
+  illustration: '/illustrations/baby-10.png',
   physical: {
     size: '~4.9–6 kg / 11–13 lbs, ~58–61 cm / 23–24 in',
     motorSkills:

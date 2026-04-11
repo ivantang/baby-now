@@ -5,6 +5,7 @@ export const week09 = {
   title: 'Week 9 — 9 weeks old',
   highlight:
     'Smiles are coming more easily now and your baby is getting louder — in the best way. Coos, gurgles, and little "aah" sounds are the beginning of a very long conversation.',
+  illustration: '/illustrations/baby-09.png',
   physical: {
     size: '~4.7–5.7 kg / 10.5–12.5 lbs, ~57–60 cm / 22.5–23.5 in',
     motorSkills:

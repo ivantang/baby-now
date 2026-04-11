@@ -3,6 +3,7 @@ export const week02 = {
   week: 2,
   ageRange: '2 weeks old',
   title: 'Week 2 — 2 weeks old',
+  illustration: '/illustrations/baby-02.png',
   highlight: 'Content coming soon.',
   physical: { size: '', motorSkills: '', reflexes: '' },
   cognitive: { vision: '', hearing: '', awareness: '' },

@@ -5,6 +5,7 @@ export const week14 = {
   title: 'Week 14 — 3.5 months old',
   highlight:
     'Your baby is now firmly in the "wonder weeks" of early discovery — grabbing everything, mouthing everything, and laughing at nearly everything you do. Life with them is genuinely fun.',
+  illustration: '/illustrations/baby-14.png',
   physical: {
     size: '~5.7–7 kg / 12.5–15.5 lbs, ~61–64 cm / 24–25 in',
     motorSkills:
