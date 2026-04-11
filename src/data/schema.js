@@ -65,4 +65,17 @@
  * @property {boolean}            isStub      True when content is placeholder; false when fully written
  */
 
+/**
+ * A single photo journal entry.
+ *
+ * @typedef {Object} JournalEntry
+ * @property {string}      id          UUID, generated on creation
+ * @property {Blob}        photoBlob   Compressed JPEG blob (stored in IndexedDB)
+ * @property {string}      photoUrl    Temporary object URL for display (not persisted)
+ * @property {number|null} weekNumber  Week tag (1–52), or null if untagged
+ * @property {string|null} milestoneId Links to a Milestone id, or null
+ * @property {string|null} caption     Optional caption (max 200 chars)
+ * @property {string}      createdAt   ISO timestamp of when the record was created
+ */
+
 export {}
