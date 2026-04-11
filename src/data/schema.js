@@ -55,6 +55,7 @@
  * @property {string}             ageRange    Human-readable age, e.g. "2 months old"
  * @property {string}             title       Week card headline, e.g. "Week 8 — 2 months old"
  * @property {string}             highlight   1–2 sentence developmental highlight shown in list views
+ * @property {string}             [illustration] Path to the week's SVG illustration, e.g. "/illustrations/week-04.svg"
  * @property {PhysicalDevelopment} physical
  * @property {CognitiveDevelopment} cognitive
  * @property {SleepInfo}          sleep

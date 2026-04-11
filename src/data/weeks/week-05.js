@@ -5,6 +5,7 @@ export const week05 = {
   title: 'Week 5 — 5 weeks old',
   highlight:
     'Week 5 is often the peak of fussiness for newborns — more crying, more cluster feeding, more need to be held. It\'s hard, and it\'s temporary. A corner is coming.',
+  illustration: '/illustrations/baby-05.png',
   physical: {
     size: '~3.8–4.8 kg / 8.5–10.5 lbs, ~53–57 cm / 21–22.5 in',
     motorSkills:

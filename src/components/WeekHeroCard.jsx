@@ -19,6 +19,16 @@ export default function WeekHeroCard({ babyName, currentWeek, onChangeBirthday }
 
   return (
     <div className="hero-card">
+      {weekData?.illustration && (
+        <img
+          className="hero-illustration"
+          src={weekData.illustration}
+          alt={`Week ${currentWeek} — ${weekData.ageRange}`}
+          width="200"
+          height="240"
+        />
+      )}
+
       <div className="hero-week-badge">Week {currentWeek}</div>
 
       <h1 className="hero-title">

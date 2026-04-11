@@ -5,6 +5,7 @@ export const week12 = {
   title: 'Week 12 — 3 months old',
   highlight:
     'Three months in — and your baby is becoming a little person. They\'re laughing, "talking" back to you, and discovering their hands with absolute wonder. The newborn fog is lifting.',
+  illustration: '/illustrations/baby-12.png',
   physical: {
     size: '~5.5–6.5 kg / 12–14 lbs, ~59–62 cm / 23–24.5 in',
     motorSkills:

@@ -5,6 +5,7 @@ export const week15 = {
   title: 'Week 15 — almost 4 months',
   highlight:
     'Almost 4 months — and your baby is everywhere at once. Rolling, grabbing, squealing, laughing. The amount of personality packed into this small person is remarkable.',
+  illustration: '/illustrations/baby-15.png',
   physical: {
     size: '~5.9–7.2 kg / 13–16 lbs, ~62–65 cm / 24.5–25.5 in',
     motorSkills:

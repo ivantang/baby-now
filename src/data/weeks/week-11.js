@@ -5,6 +5,7 @@ export const week11 = {
   title: 'Week 11 — 11 weeks old',
   highlight:
     'Laughing is just around the corner. Your baby\'s sounds are becoming more varied and expressive — squeals, gurgles, and long strings of coos that sound almost like sentences.',
+  illustration: '/illustrations/baby-11.png',
   physical: {
     size: '~5.1–6.2 kg / 11–13.5 lbs, ~58–62 cm / 23–24.5 in',
     motorSkills:

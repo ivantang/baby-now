@@ -3,6 +3,7 @@ export const week01 = {
   week: 1,
   ageRange: '0–1 week old',
   title: 'Week 1 — 0–1 week old',
+  illustration: '/illustrations/baby-01.png',
   highlight: 'Content coming soon.',
   physical: { size: '', motorSkills: '', reflexes: '' },
   cognitive: { vision: '', hearing: '', awareness: '' },
