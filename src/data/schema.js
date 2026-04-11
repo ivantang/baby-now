@@ -65,4 +65,15 @@
  * @property {boolean}            isStub      True when content is placeholder; false when fully written
  */
 
+/**
+ * A single logged milestone.
+ *
+ * @typedef {Object} Milestone
+ * @property {string}      id          UUID, generated on creation
+ * @property {string}      name        Milestone name, e.g. "First smile"
+ * @property {string}      achievedAt  ISO date string (date only), e.g. "2025-03-15"
+ * @property {string|null} note        Optional parent note
+ * @property {string}      createdAt   ISO timestamp of when the record was created
+ */
+
 export {}
