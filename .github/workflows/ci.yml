@@ -26,9 +26,15 @@ jobs:
 
       - name: Run tests
         run: npm test
+        env:
+          VITE_SUPABASE_URL: https://placeholder.supabase.co
+          VITE_SUPABASE_ANON_KEY: placeholder.placeholder.placeholder
 
       - name: Build
         run: npm run build
+        env:
+          VITE_SUPABASE_URL: https://placeholder.supabase.co
+          VITE_SUPABASE_ANON_KEY: placeholder.placeholder.placeholder
 
   e2e:
     name: E2E Tests (Playwright)
@@ -60,6 +66,9 @@ jobs:
 
       - name: Run E2E tests
         run: npm run test:e2e
+        env:
+          VITE_SUPABASE_URL: https://placeholder.supabase.co
+          VITE_SUPABASE_ANON_KEY: placeholder.placeholder.placeholder
 
       - name: Upload Playwright report
         if: always()
