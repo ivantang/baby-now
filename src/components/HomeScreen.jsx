@@ -1,21 +1,24 @@
 import React, { useState } from 'react'
 import { motion } from 'motion/react'
 import BabyCharacter from './BabyCharacter.jsx'
-import { getWeek } from '../data/index.js'
+import { getWeek, getCurrentDayOfWeek } from '../data/index.js'
 
 /**
- * Home tab — shows the current week card, BabyCharacter, this week's
- * watch-for milestones (checkable), and the AI upsell banner.
+ * Home tab — shows the current week card, BabyCharacter, today's daily fact,
+ * this week's watch-for milestones (checkable), and the AI upsell banner.
  *
  * @param {{
  *   babyName: string,
+ *   birthday: Date,
  *   currentWeek: number,
  *   onChangeBirthday: () => void,
  *   onGoToChat: () => void,
  * }} props
  */
-export default function HomeScreen({ babyName, currentWeek, onChangeBirthday, onGoToChat }) {
+export default function HomeScreen({ babyName, birthday, currentWeek, onChangeBirthday, onGoToChat }) {
   const weekData = getWeek(currentWeek)
+  const dayOfWeek = birthday ? getCurrentDayOfWeek(birthday) : 0
+  const todaysFact = weekData?.dailyFacts?.[dayOfWeek] ?? null
 
   // Derive per-week milestone items from watchFor array
   const milestoneItems = weekData?.parentTips?.watchFor?.map((text, i) => ({
@@ -77,6 +80,19 @@ export default function HomeScreen({ babyName, currentWeek, onChangeBirthday, on
           Change birthday
         </button>
       </div>
+
+      {/* Today's daily fact */}
+      {todaysFact && (
+        <motion.div
+          className="home-daily-fact"
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+        >
+          <span className="home-daily-fact-label">Today</span>
+          <p className="home-daily-fact-text">{todaysFact}</p>
+        </motion.div>
+      )}
 
       {/* This week's milestones */}
       {milestoneItems.length > 0 && (

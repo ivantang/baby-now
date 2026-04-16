@@ -62,6 +62,7 @@
  * @property {FeedingInfo}        feeding
  * @property {PlayActivities}     play
  * @property {ParentTips}         parentTips
+ * @property {string[]}           dailyFacts  7 short facts or tips, one per day of the week (index 0 = day 1, index 6 = day 7)
  * @property {boolean}            isStub      True when content is placeholder; false when fully written
  */
 

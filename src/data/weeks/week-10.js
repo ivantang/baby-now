@@ -62,5 +62,14 @@ export const week10 = {
       'No social smiling by this week — mention at next visit',
     ],
   },
+  dailyFacts: [
+    'Your baby now notices things across the room — a complete change from the 20–30 cm newborn range. Their visual world is expanding rapidly, and so is their curiosity.',
+    'Smiles are freely given to multiple caregivers now, not just you. Watching your baby charm everyone they meet is one of the genuine joys of this age.',
+    'Simple peekaboo — hiding your face and revealing it — is genuinely stimulating at 10 weeks. It hints at object permanence, the idea that things still exist when they can\'t be seen.',
+    'A 3-month growth spurt is approaching in the next few weeks. If your baby suddenly seems insatiable for a few days, feed on demand — it will pass within 48–72 hours.',
+    'Narrating your day as you go — nappy changes, making coffee, walking to the shops — floods your baby\'s brain with language input. Every word you say is a seed planted.',
+    'Ten weeks in, you\'ve built real intuition about your baby — their cries, their rhythms, their tells. That knowledge is hard-won and genuinely yours. Trust it.',
+    'Some babies are sleeping 5–6 hours at night by now; others are not. Both are within the normal range. Comparing to other babies will only stress you — follow your own.',
+  ],
   isStub: false,
 }

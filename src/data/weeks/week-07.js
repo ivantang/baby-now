@@ -64,5 +64,14 @@ export const week07 = {
       'Signs of dehydration: no wet nappies for 8+ hours, dry mouth, no tears when crying',
     ],
   },
+  dailyFacts: [
+    'Social smiles are increasing this week — and each one is your baby\'s way of telling you they know you and they love you. Smile back every time; you\'re wiring their brain for connection.',
+    'Most 7-week-olds can only stay comfortably awake for 45–75 minutes before they need to sleep. Catching tired cues early — yawning, staring off, fussing — leads to much easier settling.',
+    'Your baby is starting to differentiate between your soothing voice and your playful voice. They\'re reading you more than you realise — and they like what they see.',
+    'Wearing your baby in a carrier during your normal day provides movement, warmth, and closeness — all deeply calming and stimulating at once. Your hands stay free; their brain stays happy.',
+    'The fading of newborn reflexes isn\'t something to worry about — it\'s a sign the brain is developing beautifully, with voluntary control taking over from automatic responses.',
+    'Introducing a bottle between weeks 4–8 (if you\'re breastfeeding and want that option later) is often recommended before nipple preference can set in. No pressure — just a window to know about.',
+    'Week 7 is often the first time parents feel like their baby genuinely "knows" them. That feeling is real. You are their whole world.',
+  ],
   isStub: false,
 }

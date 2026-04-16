@@ -62,5 +62,14 @@ export const week11 = {
       'No social smiling, no interactive response',
     ],
   },
+  dailyFacts: [
+    'The first laugh could arrive any day now. It tends to come during a moment of joyful interaction — a funny noise, a gentle tickle, an exaggerated expression. Stay ready.',
+    'When your baby discovers that kicking the gym mobile makes it move, watch for the pause, the look, and the deliberate second kick. That\'s cause-and-effect understanding happening in real time.',
+    'Head control is noticeably stronger this week — your baby can hold their head in line with their body when gently pulled to sit. That growing neck strength is doing a lot of work.',
+    'Parentese — the high-pitched, exaggerated, sing-song voice most people naturally use with babies — is literally optimised for infant learning. Don\'t be embarrassed to use it freely.',
+    'A growth spurt is common around weeks 11–13. If your baby seems constantly hungry for a few days, feed on demand and know it won\'t last.',
+    'Loose nap patterns may start to emerge this week. Don\'t force a schedule — just watch wake windows of around 75–90 minutes and respond to tiredness cues before they escalate.',
+    'If you\'re starting to feel more like yourself this week, honour that by doing one small thing today that feels like "you" — a walk, a call to a friend, something that isn\'t about the baby.',
+  ],
   isStub: false,
 }

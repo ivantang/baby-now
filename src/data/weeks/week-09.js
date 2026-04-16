@@ -62,5 +62,14 @@ export const week09 = {
       'Difficulty feeding, excessive vomiting, or poor weight gain',
     ],
   },
+  dailyFacts: [
+    'The hardest weeks of newborn sleep are likely behind you now. Variation is still normal — a rough night after a good one isn\'t a step backward, just the natural rhythm of this stage.',
+    'Your baby is starting to reach toward objects, though they won\'t always make contact yet. Dangling a colourful toy 20–30 cm above them gives their arms something to aim for.',
+    'When you coo and your baby coos back, you\'re not just playing — you\'re literally wiring the social, language, and emotional centres of their developing brain. Presence and responsiveness are everything.',
+    'Shorter breastfeeding sessions don\'t mean less milk — your baby is simply getting more efficient. Watch nappy output and weight gain rather than the clock.',
+    'Carrying your baby facing outward in a carrier gives them an upright, stimulating view of the world while keeping them close and regulated. It\'s rich input without being overwhelming.',
+    'Your baby is beginning to show excitement when a favourite person approaches — that wiggle and brighten when they see your face is one of the most rewarding things you\'ll experience this month.',
+    'If things are starting to feel more manageable this week, that\'s real — not a trick. Accept it and enjoy it. You\'ve earned this shift.',
+  ],
   isStub: false,
 }

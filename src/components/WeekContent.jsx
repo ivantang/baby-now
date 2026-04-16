@@ -96,6 +96,26 @@ export default function WeekContent({ week, onBack }) {
             </ul>
           </motion.div>
         )}
+
+        {/* Daily facts */}
+        {data && !data.isStub && data.dailyFacts?.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: (sections.length + 1) * 0.05 }}
+            className="week-section"
+          >
+            <h4 className="week-section-title">Daily insights</h4>
+            <ol className="week-daily-list">
+              {data.dailyFacts.map((fact, i) => (
+                <li key={i} className="week-daily-item">
+                  <span className="week-daily-day">Day {i + 1}</span>
+                  <span className="week-daily-text">{fact}</span>
+                </li>
+              ))}
+            </ol>
+          </motion.div>
+        )}
       </div>
     </div>
   )
