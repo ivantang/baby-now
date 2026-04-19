@@ -66,5 +66,14 @@ export const week12 = {
       'Persistent fever above 38°C / 100.4°F',
     ],
   },
+  dailyFacts: [
+    'Three months — and the newborn fog is lifting. Your baby is laughing, "talking" back to you, and discovering their hands with wide-eyed wonder. This is one of the most rewarding weeks yet.',
+    'Most primitive reflexes — the Moro startle, the rooting, the stepping — are fading now. That\'s not a loss; it\'s the brain maturing. Voluntary, intentional movement is taking their place.',
+    'The 4-month sleep regression is still a few weeks away, but knowing it\'s coming helps. A consistent wind-down routine now — bath, feed, song — builds the association that will serve you both well.',
+    'Breastfed babies at 3 months are very efficient feeders — a 5–7 minute session can be just as satisfying as a 20-minute newborn feed. Short doesn\'t mean insufficient.',
+    'Postpartum depression can emerge or worsen around the 3-month mark, not just immediately after birth. Check in honestly with yourself — effective help is available at any stage.',
+    'Reading board books aloud at 3 months isn\'t about comprehension — it\'s about the rhythm, tone, and music of your voice. The habit you build now will matter greatly later.',
+    'If parental leave is ending around now, that transition is emotionally complex — grief and relief can coexist. Both are valid. Give yourself grace for whatever you\'re feeling.',
+  ],
   isStub: false,
 }

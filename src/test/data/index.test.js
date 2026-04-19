@@ -55,8 +55,8 @@ describe('getAllWeeks()', () => {
 })
 
 describe('getFullWeeks()', () => {
-  it('returns exactly 13 full weeks (4–16)', () => {
-    expect(getFullWeeks()).toHaveLength(13)
+  it('returns all 52 weeks (all weeks now have full content)', () => {
+    expect(getFullWeeks()).toHaveLength(52)
   })
 
   it('only contains weeks with isStub: false', () => {
@@ -65,13 +65,11 @@ describe('getFullWeeks()', () => {
     })
   })
 
-  it('contains exactly weeks 4 through 16', () => {
+  it('contains all weeks 1 through 52', () => {
     const weekNumbers = getFullWeeks().map(w => w.week)
-    for (let w = 4; w <= 16; w++) {
+    for (let w = 1; w <= 52; w++) {
       expect(weekNumbers).toContain(w)
     }
-    expect(weekNumbers).not.toContain(3)
-    expect(weekNumbers).not.toContain(17)
   })
 
   it('is sorted by week number ascending', () => {
@@ -149,7 +147,7 @@ describe('WeekEntry schema conformance', () => {
     })
   })
 
-  it('full weeks (4–16) have non-empty content in all sections', () => {
+  it('all weeks have non-empty content in all sections', () => {
     getFullWeeks().forEach(w => {
       expect(w.highlight, `week ${w.week} highlight`).not.toBe('')
       expect(w.physical.motorSkills, `week ${w.week} motorSkills`).not.toBe('')
@@ -160,10 +158,20 @@ describe('WeekEntry schema conformance', () => {
     })
   })
 
-  it('stub weeks have isStub: true', () => {
+  it('no stub weeks remain', () => {
     const stubs = getAllWeeks().filter(w => w.isStub)
-    // weeks 1–3 and 17–52 = 3 + 36 = 39 stubs
-    expect(stubs).toHaveLength(39)
+    expect(stubs).toHaveLength(0)
+  })
+
+  it('every week has dailyFacts with exactly 7 entries', () => {
+    getAllWeeks().forEach(w => {
+      expect(Array.isArray(w.dailyFacts), `week ${w.week} dailyFacts is array`).toBe(true)
+      expect(w.dailyFacts, `week ${w.week} dailyFacts length`).toHaveLength(7)
+      w.dailyFacts.forEach((fact, i) => {
+        expect(typeof fact, `week ${w.week} day ${i + 1} fact is string`).toBe('string')
+        expect(fact.length, `week ${w.week} day ${i + 1} fact is non-empty`).toBeGreaterThan(0)
+      })
+    })
   })
 })
 

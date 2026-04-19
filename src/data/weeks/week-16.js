@@ -66,5 +66,14 @@ export const week16 = {
       'Not showing interest in faces or people around them',
     ],
   },
+  dailyFacts: [
+    'Four months old — and your baby is unmistakably themselves. They have favourite people, favourite songs, favourite games. When they reach for you, they know exactly who you are and why they want you.',
+    'The 4-month sleep regression is happening because your baby\'s sleep has reorganised into adult-like cycles. They now wake briefly between cycles but haven\'t learned to resettle — it\'s developmental, not a problem you created.',
+    'Near-adult colour vision is established by 4 months. Your baby can see the full colour spectrum and is showing clear preferences for certain colours, patterns, and toys.',
+    'Blowing raspberries back and forth is more than silly fun — imitation games at this age are directly building the social and language circuits your baby will rely on for life.',
+    'Object permanence is beginning — your baby may look briefly for a toy you\'ve hidden. This is a major cognitive leap: things still exist even when they can\'t be seen.',
+    'If you\'re pumping and returning to work, now is a good time to reassess your feeding plan with a lactation consultant if anything isn\'t working. It\'s not too late to adjust.',
+    'Sixteen weeks in — your nervous system has been in a state of high alert since birth. Rest when you can, eat real food, and let go of things that don\'t matter. You\'ve been doing something extraordinary.',
+  ],
   isStub: false,
 }

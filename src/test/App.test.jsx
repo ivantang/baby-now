@@ -47,14 +47,16 @@ describe('App — profile saved', () => {
   it('shows week content for a full-content week', () => {
     saveProfile(7) // 7 weeks ago → week 8 (full content)
     render(<App />)
-    expect(screen.getByText(/social smiles/i)).toBeInTheDocument()
+    // All weeks now have full content — check the highlight text is rendered
+    expect(screen.getAllByText(/social smiles/i).length).toBeGreaterThan(0)
   })
 
-  it('shows no full-week content for a stub week', () => {
-    saveProfile(1) // 1 week ago → week 2 (stub)
+  it('shows full content for all weeks including previously-stub weeks', () => {
+    saveProfile(1) // 1 week ago → week 2 (now full content)
     render(<App />)
-    expect(screen.queryByText(/social smiles/i)).not.toBeInTheDocument()
     expect(screen.getByText('Week 2')).toBeInTheDocument()
+    // Week card highlight is shown (not the "coming soon" stub message)
+    expect(screen.queryByText(/content coming soon/i)).not.toBeInTheDocument()
   })
 
   it('clears profile when "Change birthday" is clicked', () => {

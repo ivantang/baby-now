@@ -62,5 +62,14 @@ export const week14 = {
       'Seems to have lost skills they previously had — always worth a call',
     ],
   },
+  dailyFacts: [
+    'Hand regard — your baby staring intensely at their own hands — is completely normal and actually brilliant. They\'re discovering that those wiggly things belong to them and respond to their intentions.',
+    'The 4-month sleep regression may be arriving or just around the corner. More night waking after good nights is a common first sign — it\'s not a step backward, it\'s biology.',
+    'Your baby can push up on extended arms during tummy time now, briefly lifting their chest off the surface. That\'s a significant strength milestone that sets the stage for crawling.',
+    'Distracted feeding is picking up this week — your baby is so interested in the world that they keep pulling off to look around. Try feeding in a quieter, dimmer room.',
+    'Curiosity about your food is developmentally normal at this age, but it\'s not a readiness sign for solids on its own. The recommendation is to wait until 6 months and look for several signs together.',
+    'Stranger awareness is beginning — your baby may stare solemnly at unfamiliar people. This is a cognitive milestone, not shyness; they\'re distinguishing familiar from unfamiliar.',
+    'Sleep regression is harder on parents who had a taste of good sleep. Be kind to yourself if tonight feels like you\'re back at the start — you\'re not. You have knowledge and tools you didn\'t have before.',
+  ],
   isStub: false,
 }

@@ -54,7 +54,7 @@ function BottomNav({ activeTab, onTabChange }) {
 
 function AppShell() {
   const { user } = useAuth()
-  const { babyName, currentWeek, setProfile, clearProfile } = useBabyProfile()
+  const { babyName, birthday, currentWeek, setProfile, clearProfile } = useBabyProfile()
   const [tab, setTab] = useState('home')
   const [selectedWeek, setSelectedWeek] = useState(null)
 
@@ -83,6 +83,7 @@ function AppShell() {
             >
               <HomeScreen
                 babyName={babyName}
+                birthday={birthday}
                 currentWeek={currentWeek}
                 onChangeBirthday={clearProfile}
                 onGoToChat={() => setTab('account')}

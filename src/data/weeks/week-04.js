@@ -64,5 +64,14 @@ export const week04 = {
       'Difficulty latching, painful feeds, or signs baby isn\'t gaining weight',
     ],
   },
+  dailyFacts: [
+    'Your baby sees best at 20–30 cm — the exact distance between your face and theirs during a feed. Every nursing or bottle session is also a vision workout.',
+    'One month old today, in a sense. The Moro startle reflex — that full-body flinch at sudden sounds — is a sign of a perfectly healthy nervous system, not a sign your baby is anxious.',
+    'Tummy time for even 60 seconds at a stretch builds the neck and shoulder strength your baby needs for every motor milestone ahead. It doesn\'t have to be long to be useful.',
+    'Your voice is your baby\'s favourite sound in the world — they\'ve been listening to it since before birth. Narrating your day out loud is one of the best things you can do for their developing brain.',
+    'The 4–6 week mark is often the peak of newborn exhaustion for parents. If today is hard, that\'s not a reflection of how you\'re doing — it\'s just where you are in the timeline.',
+    'Hands tightly fisted most of the time is completely normal at this age. Your baby isn\'t stressed — it\'s simply how newborn muscle tone works, and it will relax over the coming weeks.',
+    'The 6-week postpartum check-up is coming soon. Be fully honest with your doctor or midwife about how you\'re feeling — emotionally and physically. This appointment is for you, not just a formality.',
+  ],
   isStub: false,
 }
