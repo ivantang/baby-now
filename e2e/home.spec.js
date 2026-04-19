@@ -28,7 +28,7 @@ test.describe('Birthday setup screen', () => {
     await page.getByRole('button', { name: /get started/i }).click()
 
     await expect(page.getByText(/Lily is/i)).toBeVisible()
-    await expect(page.getByText(/Week/)).toBeVisible()
+    await expect(page.getByText(/^Week \d+$/)).toBeVisible()
   })
 })
 
@@ -51,12 +51,12 @@ test.describe('Week hero card', () => {
   })
 
   test('shows developmental highlight for a full-content week', async ({ page }) => {
-    await expect(page.getByText(/social smiles/i)).toBeVisible()
+    await expect(page.locator('.week-card-highlight')).toContainText(/social smiles/i)
   })
 
   test('shows sleep and feeding stats', async ({ page }) => {
-    await expect(page.getByText(/sleep/i)).toBeVisible()
-    await expect(page.getByText(/feeding/i)).toBeVisible()
+    await expect(page.getByText('Sleep', { exact: true })).toBeVisible()
+    await expect(page.getByText('Feeding', { exact: true })).toBeVisible()
   })
 
   test('change birthday returns to setup screen', async ({ page }) => {
