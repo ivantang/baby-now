@@ -64,5 +64,14 @@ export const week06 = {
       'Feeding difficulties or poor weight gain',
     ],
   },
+  dailyFacts: [
+    'The first real social smile is imminent if it hasn\'t arrived yet — wide, gummy, aimed straight at your face. It will be unmistakable, and you\'ve absolutely earned it.',
+    'Your baby\'s alert periods are stretching to 1–1.5 hours. That\'s more time for real interaction — face-to-face "conversations," tummy time, and just being together awake.',
+    'The 6-week postpartum check-up is one of the most important appointments of the first year. Be honest with your provider about sleep, mood, pain, and how you\'re really coping.',
+    'Evening fussiness often peaks right around now. A consistent wind-down routine — walk, white noise, skin-to-skin — won\'t fix it instantly, but it gives you both something to anchor to.',
+    'Your baby is starting to distinguish your face from a stranger\'s with more reliability. You are becoming unmistakably "their person" in their developing brain.',
+    'Tummy time placed in front of a small mirror is surprisingly motivating at this age — the baby in the mirror is endlessly fascinating to them.',
+    'The 6-week fussiness peak usually starts to ease by weeks 8–10. If tonight is hard, you are genuinely closer to the corner than you were last week.',
+  ],
   isStub: false,
 }

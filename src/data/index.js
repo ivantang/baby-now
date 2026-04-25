@@ -153,3 +153,15 @@ export function getCurrentWeek(birthday) {
   const ageInWeeks = Math.floor((Date.now() - birthday.getTime()) / msPerWeek) + 1
   return Math.max(1, Math.min(52, ageInWeeks))
 }
+
+/**
+ * Returns the day index (0–6) within the current week based on birthday.
+ * Day 0 = first day of the week, day 6 = seventh day.
+ * @param {Date} birthday
+ * @returns {number}
+ */
+export function getCurrentDayOfWeek(birthday) {
+  const msPerDay = 24 * 60 * 60 * 1000
+  const ageInDays = Math.floor((Date.now() - birthday.getTime()) / msPerDay)
+  return ageInDays % 7
+}

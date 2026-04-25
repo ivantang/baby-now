@@ -6,8 +6,8 @@ test.describe('Birthday setup screen', () => {
   })
 
   test('shows setup screen when no profile exists', async ({ page }) => {
-    await expect(page.getByRole('heading', { name: 'Welcome' })).toBeVisible()
-    await expect(page.getByLabel(/birthday/i)).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Baby Week by Week' })).toBeVisible()
+    await expect(page.getByLabel(/when was your baby born/i)).toBeVisible()
   })
 
   test('has correct page title', async ({ page }) => {
@@ -15,7 +15,7 @@ test.describe('Birthday setup screen', () => {
   })
 
   test('shows error when submitted without a date', async ({ page }) => {
-    await page.getByRole('button', { name: /see this week/i }).click()
+    await page.getByRole('button', { name: /get started/i }).click()
     await expect(page.getByText(/valid birthday/i)).toBeVisible()
   })
 
@@ -24,11 +24,11 @@ test.describe('Birthday setup screen', () => {
     const dateStr = eightWeeksAgo.toISOString().split('T')[0]
 
     await page.getByLabel(/baby's name/i).fill('Lily')
-    await page.getByLabel(/birthday/i).fill(dateStr)
-    await page.getByRole('button', { name: /see this week/i }).click()
+    await page.getByLabel(/when was your baby born/i).fill(dateStr)
+    await page.getByRole('button', { name: /get started/i }).click()
 
     await expect(page.getByText(/Lily is/i)).toBeVisible()
-    await expect(page.getByText(/Week/)).toBeVisible()
+    await expect(page.getByText(/^Week \d+$/)).toBeVisible()
   })
 })
 
@@ -51,16 +51,16 @@ test.describe('Week hero card', () => {
   })
 
   test('shows developmental highlight for a full-content week', async ({ page }) => {
-    await expect(page.getByText(/social smiles/i)).toBeVisible()
+    await expect(page.locator('.week-card-highlight')).toContainText(/social smiles/i)
   })
 
   test('shows sleep and feeding stats', async ({ page }) => {
-    await expect(page.getByText(/sleep/i)).toBeVisible()
-    await expect(page.getByText(/feeding/i)).toBeVisible()
+    await expect(page.getByText('Sleep', { exact: true })).toBeVisible()
+    await expect(page.getByText('Feeding', { exact: true })).toBeVisible()
   })
 
   test('change birthday returns to setup screen', async ({ page }) => {
     await page.getByRole('button', { name: /change birthday/i }).click()
-    await expect(page.getByRole('heading', { name: 'Welcome' })).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Baby Week by Week' })).toBeVisible()
   })
 })

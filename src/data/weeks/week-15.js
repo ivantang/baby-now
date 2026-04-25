@@ -61,5 +61,14 @@ export const week15 = {
       'Persistent one-sided movements or preference for turning head one way only',
     ],
   },
+  dailyFacts: [
+    'Your baby grabbing their own feet and giggling is a moment of profound self-discovery — they\'re learning the edges of themselves, where they end and the world begins. Watch it with your full attention.',
+    'The 4-month regression tends to peak around weeks 14–16. If nights are harder than they were a few weeks ago, this is almost certainly why — and most families see improvement by weeks 18–20.',
+    'Passing objects between hands is beginning to emerge. It\'s clumsy and inconsistent, but it\'s the first hint of the hand coordination that will develop rapidly over the coming months.',
+    'Your baby is starting to recognise frequently heard words — "milk," "bath," "nappy," their own name. They won\'t respond consistently yet, but the neural pathways are forming.',
+    'Simple predictable sequences (bath time means bedtime is coming) are starting to be understood. Consistency in your routine now pays dividends in settling and security.',
+    'Free floor time with no specific goal — just a safe blanket, freedom to move, and you nearby — is some of the best "play" at this age. Your baby\'s curiosity is the curriculum.',
+    'You\'re almost at 4 months — one of the most significant milestones of the first year. Things are genuinely about to get even more fun.',
+  ],
   isStub: false,
 }

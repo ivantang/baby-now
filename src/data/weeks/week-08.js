@@ -67,5 +67,14 @@ export const week08 = {
       'Seems limp, unusually still, or very difficult to wake',
     ],
   },
+  dailyFacts: [
+    'Two months old — and those big, gummy social smiles are here. When your baby grins at your face or voice, that\'s not reflex anymore. That\'s them choosing you.',
+    'The 2-month well-visit is likely this week, along with the first round of vaccinations. Your baby may be fussier and sleepier for a day or two after — that\'s a normal immune response.',
+    'Your baby can now track a slowly moving object through nearly 180°. Hold a colourful toy at 20–30 cm and move it slowly side to side — watch their eyes follow with real focus.',
+    'Bedtime routines can gently begin now — a simple sequence of bath, feed, and song helps their developing brain start to associate certain cues with sleep. It doesn\'t need to be rigid to be effective.',
+    'Skin-to-skin contact still regulates your baby\'s temperature, heart rate, and stress hormones — even at 8 weeks. A few minutes of bare chest contact each day is never wasted.',
+    'Sleep debt is real and cumulative. Even one protected 4–5 hour block of uninterrupted sleep per night — shared with a partner or support person — makes a measurable difference to how you function.',
+    'Cooing and soft vowel sounds ("ooh," "aah") are beginning or arriving this week. When you echo them back and pause, you\'re teaching your baby the basic rhythm of conversation.',
+  ],
   isStub: false,
 }

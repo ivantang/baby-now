@@ -62,5 +62,14 @@ export const week13 = {
       'Head still very floppy — poor head control when supported upright',
     ],
   },
+  dailyFacts: [
+    'Your baby is in their social golden age right now — freely laughing, grinning, and delighting in every interaction. Lean into it. This is genuinely one of the most enjoyable stretches of the whole first year.',
+    'Rolling from tummy to back is happening with increasing frequency this week. Once they can do it, supervised floor time on a safe surface becomes their favourite way to explore.',
+    'Your baby can now see and react to objects across the room — a button on your shirt, a light on the ceiling. Their visual curiosity is picking up detail you\'d never expect them to notice.',
+    'Object permanence is just starting to develop — your baby may look briefly for a dropped toy. It\'s a tiny moment, but it\'s a significant cognitive leap from just a few weeks ago.',
+    'Longer night stretches may be appearing now — this is the calm before the 4-month sleep regression. Enjoy it, and mentally prepare for some disruption in the coming weeks.',
+    'Your baby is expressing distinct emotional states now: excitement, contentment, frustration, boredom. Reading those states and responding to them is the work of early parenting — and you\'re doing it.',
+    'Three months of knowing each other. You know their sounds, their rhythms, their faces. They light up when they see you. The bond built in this short time is their first and most important relationship.',
+  ],
   isStub: false,
 }

@@ -64,5 +64,14 @@ export const week05 = {
       'Not feeding well or showing signs of dehydration',
     ],
   },
+  dailyFacts: [
+    'Week 5 is often the peak of fussiness — more crying, more cluster feeding, more need to be held. If today feels like the hardest yet, you\'re probably right. A corner is genuinely coming.',
+    'Cluster feeding in the evenings isn\'t a sign of low milk supply — it\'s your baby tanking up before a longer sleep stretch. Follow their lead and trust the process.',
+    'Responding to your baby every single time they cry is not spoiling them — it\'s building their brain. Every time you show up, they learn the world is safe. That security lasts a lifetime.',
+    'Your baby may be showing very early signs of soothing to a consistent sound or song. Repetition is how newborns learn — the same lullaby every night is never boring to them.',
+    'Those brief reflexive smiles during light sleep aren\'t social yet — but the real ones are only about a week away. Keep watching.',
+    'Skin-to-skin contact is still incredibly powerful at 5 weeks. Even 10 minutes with your baby\'s head on your bare chest helps regulate their heart rate, temperature, and stress hormones.',
+    'Postpartum mood changes can peak around weeks 4–6. Feeling overwhelmed is normal; feeling hopeless or unable to bond is a signal to reach out to your doctor — and help is very effective.',
+  ],
   isStub: false,
 }

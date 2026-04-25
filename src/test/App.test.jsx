@@ -8,18 +8,17 @@ afterEach(() => localStorage.clear())
 describe('App — no profile set', () => {
   it('shows the setup screen when no birthday is stored', () => {
     render(<App />)
-    expect(screen.getByText('Welcome')).toBeInTheDocument()
-    expect(screen.getByLabelText(/birthday/i)).toBeInTheDocument()
+    expect(screen.getByLabelText(/when was your baby born/i)).toBeInTheDocument()
   })
 
   it('shows a submit button on the setup screen', () => {
     render(<App />)
-    expect(screen.getByRole('button', { name: /see this week/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /get started/i })).toBeInTheDocument()
   })
 
   it('shows an error if submitted without a date', () => {
     render(<App />)
-    fireEvent.click(screen.getByRole('button', { name: /see this week/i }))
+    fireEvent.click(screen.getByRole('button', { name: /get started/i }))
     expect(screen.getByText(/valid birthday/i)).toBeInTheDocument()
   })
 })
@@ -33,10 +32,9 @@ describe('App — profile saved', () => {
     )
   }
 
-  it('shows the hero card when a profile exists', () => {
+  it('shows the home screen when a profile exists', () => {
     saveProfile(8, 'Lily')
     render(<App />)
-    expect(screen.getByText(/Week/)).toBeInTheDocument()
     expect(screen.getByText(/Lily is/i)).toBeInTheDocument()
   })
 
@@ -49,19 +47,22 @@ describe('App — profile saved', () => {
   it('shows week content for a full-content week', () => {
     saveProfile(7) // 7 weeks ago → week 8 (full content)
     render(<App />)
-    expect(screen.getByText(/social smiles/i)).toBeInTheDocument()
+    // All weeks now have full content — check the highlight text is rendered
+    expect(screen.getAllByText(/social smiles/i).length).toBeGreaterThan(0)
   })
 
-  it('shows stub message for a stub week', () => {
-    saveProfile(1) // 1 week ago → week 2 (stub)
+  it('shows full content for all weeks including previously-stub weeks', () => {
+    saveProfile(1) // 1 week ago → week 2 (now full content)
     render(<App />)
-    expect(screen.getByText(/coming soon/i)).toBeInTheDocument()
+    expect(screen.getByText('Week 2')).toBeInTheDocument()
+    // Week card highlight is shown (not the "coming soon" stub message)
+    expect(screen.queryByText(/content coming soon/i)).not.toBeInTheDocument()
   })
 
   it('clears profile when "Change birthday" is clicked', () => {
     saveProfile(8)
     render(<App />)
     fireEvent.click(screen.getByRole('button', { name: /change birthday/i }))
-    expect(screen.getByText('Welcome')).toBeInTheDocument()
+    expect(screen.getByLabelText(/when was your baby born/i)).toBeInTheDocument()
   })
 })
