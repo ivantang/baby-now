@@ -605,30 +605,480 @@ body {
   gap: var(--space-lg);
 }
 
-.account-title {
+.account-baby-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-lg) var(--space-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.account-baby-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.account-baby-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.account-baby-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.account-baby-week {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.account-edit-btn {
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: var(--space-xs) var(--space-md);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.account-sub-card {
+  background: linear-gradient(135deg, var(--color-lavender), var(--color-blue));
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-xl);
+  box-shadow: 0 6px 20px rgba(212, 197, 240, 0.25);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.account-sub-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.account-sub-status {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.account-sub-desc {
+  font-size: 0.8rem;
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+.account-upgrade-pill {
+  background: var(--color-primary);
+  border: none;
+  border-radius: 999px;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: var(--space-xs) var(--space-lg);
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(245, 200, 66, 0.35);
+  flex-shrink: 0;
+}
+
+.account-menu {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.account-menu-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  cursor: pointer;
+  text-align: left;
+}
+.account-menu-item:last-child { border-bottom: none; }
+.account-menu-item:active { background: var(--color-bg); }
+.account-menu-item--info { cursor: default; }
+.account-menu-item--info:active { background: none; }
+.account-menu-item--danger { color: #c0392b; }
+
+.account-menu-chevron {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.account-menu-email {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  word-break: break-all;
+}
+
+/* ─── Settings screen ─────────────────────────────────────────── */
+.settings-screen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.settings-back-btn {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-surface);
+  box-shadow: 0 2px 12px rgba(58, 42, 74, 0.06);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+}
+
+.settings-title {
   font-family: var(--font-display);
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--color-text);
 }
 
-.account-card {
+.settings-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.settings-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.settings-section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-text-muted);
+}
+
+.settings-section-label--danger { color: #c0392b; }
+
+.settings-form {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.settings-save-btn {
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-primary);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(245, 200, 66, 0.35);
+  transition: background 0.15s ease;
+}
+.settings-save-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.settings-save-btn--saved { background: var(--color-sage); box-shadow: none; }
+
+.settings-account-row {
   background: var(--color-surface);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
 }
 
-.account-email {
-  font-size: 0.95rem;
+.settings-account-email {
+  font-size: 0.9rem;
   color: var(--color-text-muted);
   word-break: break-all;
+  flex: 1;
 }
 
-.account-signout {
-  background: #c0392b;
+.settings-link-btn {
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0;
+  flex-shrink: 0;
 }
-.account-signout:hover { background: #922b21; }
+.settings-link-btn:hover { color: var(--color-text); }
+.settings-link-btn--danger { color: #c0392b; text-align: left; }
+.settings-link-btn--danger:hover { color: #922b21; }
+
+.settings-sub-badge {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.settings-sub-pill {
+  background: var(--color-lavender);
+  color: var(--color-text);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px var(--space-sm);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.settings-muted {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.settings-delete-confirm {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1.5px solid rgba(192, 57, 43, 0.2);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.settings-delete-warning {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.settings-delete-btn {
+  padding: var(--space-md) var(--space-lg);
+  background: #c0392b;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+.settings-delete-btn:hover { background: #922b21; }
+
+/* ─── Upgrade screen ──────────────────────────────────────────── */
+.upgrade-screen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.upgrade-header {
+  display: flex;
+  align-items: center;
+}
+
+.upgrade-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.upgrade-icon-wrap {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, var(--color-lavender), var(--color-blue));
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(212, 197, 240, 0.35);
+}
+
+.upgrade-icon {
+  font-size: 2rem;
+}
+
+.upgrade-title {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.upgrade-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  max-width: 320px;
+}
+
+.upgrade-features {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.upgrade-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.upgrade-check {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-text);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.upgrade-plans {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.upgrade-plan {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.upgrade-plan--selected {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 16px rgba(245, 200, 66, 0.2);
+}
+
+.upgrade-plan-best-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary-dark);
+  height: 1em;
+}
+
+.upgrade-plan-best-badge--hidden {
+  visibility: hidden;
+}
+
+.upgrade-plan-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.upgrade-plan-price {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.upgrade-plan-per {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.upgrade-plan-billing {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.upgrade-cta-btn {
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-primary);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(245, 200, 66, 0.4);
+}
+
+.upgrade-disclaimer {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-top: calc(-1 * var(--space-sm));
+}
+
+.upgrade-free-note {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
 
 /* ═══════════════════════════════════════════════════════════════
    NEW SCREENS — Figma design implementation
