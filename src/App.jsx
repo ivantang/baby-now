@@ -8,7 +8,8 @@ import WeekSelector from './components/WeekSelector.jsx'
 import WeekContent from './components/WeekContent.jsx'
 import MilestonesScreen from './components/MilestonesScreen.jsx'
 import PhotoJournal from './components/PhotoJournal.jsx'
-import AIChat from './components/AIChat.jsx'
+import SettingsScreen from './components/SettingsScreen.jsx'
+import UpgradeScreen from './components/UpgradeScreen.jsx'
 import AuthGate from './components/auth/AuthGate.jsx'
 import AccountScreen from './components/auth/AccountScreen.jsx'
 
@@ -57,14 +58,45 @@ function AppShell() {
   const { babyName, birthday, currentWeek, setProfile, clearProfile } = useBabyProfile()
   const [tab, setTab] = useState('home')
   const [selectedWeek, setSelectedWeek] = useState(null)
+  const [showSettings, setShowSettings] = useState(false)
+  const [showUpgrade, setShowUpgrade] = useState(false)
+  const [showAuth, setShowAuth] = useState(false)
 
   if (!currentWeek) {
     return <BirthdaySetup onSave={setProfile} />
   }
 
-  // Show auth gate for account tab when signed out
-  if (tab === 'account' && !user) {
-    return <AuthGate onSkip={() => setTab('home')} />
+  // Auth gate overlay (sign-in flow)
+  if (showAuth && !user) {
+    return <AuthGate onSkip={() => setShowAuth(false)} />
+  }
+
+  // Settings overlay (no bottom nav — full attention on editing)
+  if (showSettings) {
+    return (
+      <div className="app-shell">
+        <main className="app">
+          <SettingsScreen
+            babyName={babyName}
+            birthday={birthday}
+            onUpdateProfile={setProfile}
+            onClearProfile={clearProfile}
+            onBack={() => setShowSettings(false)}
+          />
+        </main>
+      </div>
+    )
+  }
+
+  // Upgrade overlay (no bottom nav — focused conversion flow)
+  if (showUpgrade) {
+    return (
+      <div className="app-shell">
+        <main className="app">
+          <UpgradeScreen onBack={() => setShowUpgrade(false)} />
+        </main>
+      </div>
+    )
   }
 
   function handleTabChange(newTab) {
@@ -86,7 +118,7 @@ function AppShell() {
                 birthday={birthday}
                 currentWeek={currentWeek}
                 onChangeBirthday={clearProfile}
-                onGoToChat={() => setTab('account')}
+                onGoToChat={() => setShowUpgrade(true)}
               />
             </motion.div>
           )}
@@ -121,12 +153,18 @@ function AppShell() {
             </motion.div>
           )}
 
-          {tab === 'account' && user && (
+          {tab === 'account' && (
             <motion.div key="account"
               initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }}
               transition={{ duration: 0.25 }}
             >
-              <AccountScreen />
+              <AccountScreen
+                babyName={babyName}
+                currentWeek={currentWeek}
+                onOpenSettings={() => setShowSettings(true)}
+                onOpenUpgrade={() => setShowUpgrade(true)}
+                onOpenSignIn={() => setShowAuth(true)}
+              />
             </motion.div>
           )}
         </AnimatePresence>
