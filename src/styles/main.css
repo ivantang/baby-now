@@ -1398,3 +1398,200 @@ body {
   outline: none;
 }
 .aichat-input::placeholder { color: var(--color-text-muted); }
+
+/* ─── Badge shelf ────────────────────────────────────────────── */
+.badge-shelf {
+  margin-bottom: var(--space-xl);
+}
+
+.badge-shelf-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+}
+
+.badge-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--space-sm) var(--space-xs);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  overflow: hidden;
+}
+
+.badge-tile--earned {
+  background: linear-gradient(145deg, #f0eafc, #e8e0f8);
+  box-shadow: 0 2px 10px rgba(138, 99, 210, 0.15);
+}
+
+.badge-tile--locked {
+  opacity: 0.45;
+  filter: grayscale(0.4);
+}
+
+.badge-tile-emoji {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.badge-tile-name {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+  line-height: 1.25;
+}
+
+.badge-tile-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(ellipse at 50% 0%, rgba(212, 197, 240, 0.55) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ─── Badge detail modal ─────────────────────────────────────── */
+.badge-detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(58, 42, 74, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: var(--space-lg);
+}
+
+.badge-detail-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.badge-detail-emoji-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--color-surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-xs);
+}
+
+.badge-detail-emoji-wrap--earned {
+  background: linear-gradient(145deg, #f0eafc, #e0d5f8);
+  box-shadow: 0 4px 16px rgba(138, 99, 210, 0.2);
+}
+
+.badge-detail-emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.badge-detail-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.badge-detail-tagline {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.badge-detail-date {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.badge-detail-locked-hint {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.badge-detail-close {
+  margin-top: var(--space-sm);
+  padding: var(--space-sm) var(--space-xl);
+  background: var(--color-primary);
+  color: var(--color-text);
+  border: none;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ─── Badge unlock toast ─────────────────────────────────────── */
+.badge-unlock-toast {
+  position: fixed;
+  top: var(--space-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  box-shadow: 0 8px 32px rgba(58, 42, 74, 0.18);
+  white-space: nowrap;
+  max-width: calc(100vw - 2 * var(--space-lg));
+}
+
+.badge-unlock-toast-emoji {
+  font-size: 1.75rem;
+  line-height: 1;
+  display: inline-block;
+}
+
+.badge-unlock-toast-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.badge-unlock-toast-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.badge-unlock-toast-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
